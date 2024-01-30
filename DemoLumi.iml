@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="lib">
         <CLASSES>
           <root url="file://$MODULE_DIR$/../Case2/lib" />
@@ -19,5 +19,7 @@
         <jarDirectory url="file://$MODULE_DIR$/../Case2/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="javafx" level="project" />
+    <orderEntry type="library" exported="" name="apache.poi.examples" level="project" />
   </component>
 </module>

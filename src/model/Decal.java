@@ -1,5 +1,7 @@
 package src.model;
 
+import src.manager.DateManager;
+
 public class Decal {
     private String code;
     private String name;
@@ -7,12 +9,14 @@ public class Decal {
     private long price;
     private long quantity;
 
+    private DateManager dateManager;
     public Decal(String code, String name, String color, long price, long quantity) {
         this.code = code;
         this.name = name;
         this.color = color;
         this.price = price;
         this.quantity = quantity;
+        this.dateManager = new DateManager();
     }
 
     public String getCode() {

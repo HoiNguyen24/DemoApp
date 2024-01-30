@@ -1,5 +1,7 @@
 package src.model;
 
+import src.manager.DateManager;
+
 public class Clothes {
     private String code;
     private String name;
@@ -8,6 +10,16 @@ public class Clothes {
     private long price;
     private long quantity;
 
+    private DateManager dateManager;
+    public Clothes(String code, String name, String color, String type, long price, long quantity) {
+        this.code = code;
+        this.name = name;
+        this.color = color;
+        this.type = type;
+        this.price = price;
+        this.quantity = quantity;
+        this.dateManager = new DateManager();
+    }
     public String getCode() {
         return code;
     }
@@ -56,12 +68,5 @@ public class Clothes {
         this.quantity = quantity;
     }
 
-    public Clothes(String code, String name, String color, String type, long price, long quantity) {
-        this.code = code;
-        this.name = name;
-        this.color = color;
-        this.type = type;
-        this.price = price;
-        this.quantity = quantity;
-    }
+
 }
